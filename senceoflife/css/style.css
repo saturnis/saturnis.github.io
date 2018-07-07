@@ -1,0 +1,360 @@
+
+.row { display: inline-block; }
+* html .row { height: 1%; }
+.row { display: block; }
+.row:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+#hidden-button { margin-right: 40px; display: none; }
+#hidden-button a { color: black; font-size: 20px; text-decoration: none; }
+.fullsize-menu { display: none; width: 100%; height: 100vh; background: white; position: fixed; z-index: 1; }
+li {
+	margin: 0;
+}
+body {
+	margin: 0 auto;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.bh2  {
+	text-align: center;
+	font-size: 50px;
+	font-weight: 400;
+	margin: 0;
+	padding: 0;
+	margin-bottom: 15px;
+}
+.wrapper {
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+.first {
+	width: 100%;
+	height: 99.8vh;
+	background: url(https://strnxx.github.io/senceoflife/img/bg1.jpg) center/cover;
+
+}
+
+.first-logo {
+	width: 120px;
+	height: 52px;
+	margin: 0 auto;
+	background: url() no-repeat;
+}
+
+.first-text p {
+	margin-top: 15%;
+	text-align: center;
+	font-size: 50px;
+	color: white;
+	font-weight: 600;
+}
+
+.first-logo-padding {
+	padding-top: 100px;
+}
+
+.topnav li {
+	display: inline;
+	font-size: 15px;
+	margin: 10px 10px;
+}
+.nav-a {
+	text-decoration: none;
+	color: white;
+}
+.topnav a:hover {
+	border-bottom: 2px solid orange;
+	color: orange;
+}
+.topnav {
+	position: fixed;
+	width: 100%;
+	height: 54px;
+	border-bottom: 1px solid rgb(255,255,255,0.2);
+	z-index: 2;
+}
+
+.topics {
+	margin: 0 auto;
+	background: white;
+	width: 100%;
+	height: 100%;
+	padding-bottom: 30px;
+	padding-top: 30px;
+}
+
+.topics-place {
+	display: flex;
+	flex-wrap: wrap;
+	line-height: 1.6;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.fullsize-menu li:hover {
+	color: orange;
+}
+
+.topics-content {
+	width: 300px;
+	margin: 5px;
+	margin-bottom: 20px;
+}
+.topics-content:hover a {
+	color: #555555;
+}
+
+.topics-content-img {
+	width: 300px;
+	margin-bottom: 5px;
+	overflow: hidden;
+}
+.topics-content-img img {
+	width: 100%;
+	height: 100%;
+	-moz-transition: all 1s ease-out;
+	-o-transition: all 1s ease-out;
+	-webkit-transition: all 1s ease-out;
+}
+.topics-content-img img:hover {
+	-webkit-transform: scale(1.1);
+ 	-moz-transform: scale(1.1);
+ 	-o-transform: scale(1.1);
+}
+
+.topics-content-text a {
+	text-decoration: none;
+	color: black;
+}
+
+.topics-content-text p {
+	font-size: 12px;
+	padding: 0;
+	margin: 0;
+	line-height: 1.4;
+}
+
+.topics-content-text h3 {
+	font-size: 14px;
+	margin: 0;
+	padding: 0;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: normal;
+	line-height: 1.4;l
+}
+
+.about {
+	background-color: #eeeeee;
+	padding-bottom: 30px;
+	padding-top: 30px;
+}
+
+.about-text {
+	float: left;
+}
+.about-logo {
+	width: 50%;
+	float:left;
+}
+.about-logo img {
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.about-text p {
+	margin: 0;
+	padding: 0;
+}
+.projects {
+	margin: 0;
+	padding: 0;
+}
+
+.projects-main {
+	height: 480px;
+}
+.projects-main h4 {
+	margin: 0;
+	padding: 0;
+	color: white;
+	font-size: 40px;
+	font-weight: 600;
+}
+.projects-main p {
+	color: white;
+	font-size: 15px;
+	font-weight: 600;
+	margin-bottom: 30px;
+}
+.--plugstudio {
+	background: url(/senceoflife/img/music_rock_wallpaper_free_desktop.jpg) top center/cover;
+}
+.--audition {
+	background: url(/senceoflife/img/bg_prj_audition.jpg) top center/cover;
+}
+.--2dproduction {
+	background: url(/senceoflife/img/b5820903b1cb48508f2ce5efa506.jpg) center/cover;
+	color: black;
+}
+
+.--girlsdontcry {
+	background: url(/senceoflife/img/829ddcb03856256ccf7de2911844b5b5.jpg) center/cover;
+}
+.--2dlive {
+	background: url(/senceoflife/img/bg_prj_25dlive.jpg) top center/cover;
+}
+
+.--yellow {
+	background: black;
+}
+
+.--yellow h4 {
+	color: white;
+}
+.--yellow p {
+	color: white;
+}
+
+.projects-text-area {
+	margin-top:150px;
+	width: 40%;
+	float: right;
+}
+.projects-logo {
+	width: 60%;
+	float: left;
+}
+.projects-button {
+	padding: 6px 20px;
+	background: white;
+	border-radius: 22px;
+	color: black;
+	text-decoration: none;
+	font-weight: 600;
+	border: 2px solid white;
+	font-size: 14px;
+}
+.projects-button:hover {
+	color: orange;
+	border: 2px solid orange;
+}
+
+footer {
+	height: 300px;
+	background: white;
+	padding: 15px;
+}
+footer a:hover {
+	color: orange;
+}
+.foot-logo {
+	float: left;
+	width: 200px;
+}
+
+ .foot-ul1  {
+	float: left;
+	width: 200px;
+}
+
+.foot-ul2 {
+	float: left;
+	width: 200px;
+}
+
+.foot-ul1 ul {
+	margin-top: 0;
+}
+.foot-ul2 ul {
+	margin-top: 0;
+}
+
+.foot-ul1 li {
+	font-size: 14px;
+	font-weight: 400;
+	color: black;
+	line-height: 1.8;
+	letter-spacing: 0.03em;
+	text-decoration: none;
+	list-style-type: none;
+}
+.foot-ul1 a {
+	color: #555555;
+	text-decoration: none;
+}
+
+.foot-ul2 a {
+	color: black;
+	text-decoration: none;
+}
+
+.foot-ul2 li {
+	font-size: 14px;
+	font-weight: 400;
+	color: black;
+	line-height: 1.8;
+	letter-spacing: 0.03em;
+	text-decoration: none;
+	list-style-type: none;
+}
+.foot-social li {
+	display: inline;
+	padding: 2px 7px;
+}
+.foot-social li {
+
+}
+.foot-social {
+	float: right;
+}
+
+.foot-foot-cop {
+	float: left;
+}
+
+.foot-foot-nav {
+	float: left;
+}
+
+.foot-foot-nav a {
+	color: black;
+	text-decoration: none;
+}
+
+.foot-foot-nav li {
+	float: left;
+	display: inline;
+	padding: 0 20px;
+	font-size: 13px;
+	letter-spacing: 0.07em;
+
+}
+
+.foot-padding {
+	padding-top: 70px;
+}
+
+.foot-foot-cop p {
+	font-size: 12px;
+	color: black;
+	padding: 5px;
+}
+.nav-a-black {
+	color: black;
+}
+
+.topnav-white {
+	background: white;
+	z-index: 999;
+}
+.transition {
+  transition: 1s;
+}

@@ -1,0 +1,154 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>TSI TEST</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&amp;subset=cyrillic" rel="stylesheet">
+	<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+</head>
+<body>
+	<div class="topnav">
+		<div class="dommru">
+			<div style="width: 100px; height: 100px; background: red; margin: 30px 30px;"></div>
+			<ul>
+				<li id="tn1">
+					<i class="fas fa-user"></i>
+					<p>Интернет + ТВ</p>
+				</li>
+			</ul>
+		</div>
+		<div class="subnav1">
+			<ul>
+				<li><a href="#">Сравнить все тарифы</a></li>
+				<li><a href="#">Тариф "Супер тариф М"</a></li>
+				<li><a href="#">Тариф "Супер тариф L"</a></li>
+				<li><a href="#">Тариф "Супер тариф XL"</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="hidder"></div>
+		<div class="slider-forms">
+			<div class="in-slider-forms">
+				<div id="slider">
+					<a class="control_next">></a>
+					<a class="control_prev"><</a>
+					<ul>
+						<li style="background: url(1.jpg) center/cover;"></li>
+					    <li style="background: url(2.jpg) center/cover;"></li>
+					    <li style="background: url(3.jpg) center/cover;"></li>
+					</ul>
+				</div>
+				<div class="forms">
+					<div class="in-forms">
+						<h3>Отправьте заявку на подключение</h3>
+						<div class="row">
+							<div class="internet-form">
+								<p><input type="checkbox"> Домашний интернет</p>
+							</div>
+							<div class="internet-form">
+		  						<p><input type="checkbox"> Домашний телефон</p>
+							</div>
+						</div>
+						<hr noshade color="#eeeeee">
+						<h3 style="margin-bottom: 0; padding-bottom: 0;">После отправки заявки с Вами свяжется оператор</h3>
+						<div class="row">
+							<p style="padding-top: 0; margin: 10px 0; font-size: 18px; font-weight: 600; color: 212121;">Проверьте адрес подключения</p>
+							<div class="form-ulica">
+								<input type="text" name="ulica" placeholder="Улица">
+							</div>
+							<div class="form-dom">
+								<input type="text" name="dom" placeholder="Дом">
+							</div>
+							<div class="form-kv">
+								<input type="text" name="kv" placeholder="Кв.">
+							</div>
+						</div>
+						<div class="row">
+							<div class="form-name">
+								<p style="padding-top: 0; margin: 10px 0; font-size: 18px; font-weight: 600; color: 212121;">Как к Вам обращаться</p>
+								<input type="text" name="name" placeholder="Фамилия Имя Отчество">
+							</div>
+							<div class="form-phone">
+								<p style="padding-top: 0; margin: 10px 0; font-size: 18px; font-weight: 600; color: 212121;">Контактный телефон</p>
+								<input type="text" name="phone" placeholder="Телефон">
+							</div>
+							<div class="form-button">
+								<a href="#">Заказать</a>
+							</div>
+						</div>
+						<div class="rules" style="float: left;">
+							<input type="checkbox" name="rules"> 
+						</div>
+						<div style="float: left;">
+							<p style="font-size: 14px;">Даю согласие на обработку персональных данных в соответствии с <a href="#">Условиями</a>.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+</body>
+<script type="text/javascript">
+	$(document).ready(function(){
+    	var li = $('#tn1');
+    	var sub = $('.subnav1');
+    	var hidde = $('.hidder');
+
+    	$(li).mouseenter(function(){
+    		$(this).append($(sub));
+    		$(sub).slideToggle();
+    		$(hidde).fadeIn();
+    	});
+
+	$(li).mouseleave(function(){
+		$(hidde).css('display','none');
+		$(sub).css('display','none');
+		});
+	});
+</script>
+
+<script type="text/javascript">
+	jQuery(document).ready(function ($) {
+
+		var slideCount = $('#slider ul li').length;
+		var slideWidth = $('#slider ul li').width();
+		var slideHeight = $('#slider ul li').height();
+		var sliderUlWidth = slideCount * slideWidth;
+		
+		$('#slider').css({ width: slideWidth, height: slideHeight });
+		
+		$('#slider ul').css({ width: sliderUlWidth, marginLeft: - slideWidth });
+		
+	    $('#slider ul li:last-child').prependTo('#slider ul');
+
+	    function moveLeft() {
+	        $('#slider ul').animate({
+	            left: + slideWidth
+	        }, 800, function () {
+	            $('#slider ul li:last-child').prependTo('#slider ul');
+	            $('#slider ul').css('left', '');
+	        });
+	    };
+
+	    function moveRight() {
+	        $('#slider ul').animate({
+	            left: - slideWidth
+	        }, 800, function () {
+	            $('#slider ul li:first-child').appendTo('#slider ul');
+	            $('#slider ul').css('left', '');
+	        });
+	    };
+
+	    $('a.control_prev').click(function () {
+	        moveLeft();
+	    });
+
+	    $('a.control_next').click(function () {
+	        moveRight();
+	    });
+
+});    
+
+
+</script>
+</html>

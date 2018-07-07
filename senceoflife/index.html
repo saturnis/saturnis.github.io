@@ -1,0 +1,277 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>Sence of Life</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
+	<link rel="stylesheet" type="text/css" href="./css/mobile.css" media="screen and (max-width: 929px)"> 
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600&amp;subset=cyrillic" rel="stylesheet"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="HandheldFriendly" content="true">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta content="telephone=no" name="format-detection">
+	<script src="./js/jquery-3.3.1.js"></script> 
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			var touch = $('#hidden-button');
+		    var menu = $('.fullsize-menu');
+		 
+		    $(touch).on('click', function(e) {
+		        e.preventDefault();
+		        menu.slideToggle();
+		    });
+		    $(window).resize(function(){
+		        var wid = $(window).width();
+		        if(wid > 929 && menu.is(':hidden')) {
+		            menu.removeAttr('style');
+		        }
+		    });
+		});
+	</script>
+</head>
+<body id="glavna">
+	<nav class="topnav">
+		<div style="float: right;">
+		<ul>
+			<li><a href="#glavna" class="nav-a ">ГЛАВНАЯ</a></li>
+			<li><a href="#topics" class="nav-a">НОВОСТИ</a></li>
+			<li><a href="#topics" class="nav-a">#ВЦЕНТРЕ</a></li>
+			<li><a href="#about" class="nav-a">О НАС</a></li>
+			<li><a href="#" class="nav-a">КОНТАКТЫ</a></li>
+			<li><a href="http://strnxx.github.io" class="nav-a" style="margin-right: 40px;">SOCIAL</a></li>
+			<li id="hidden-button"><a href="#">&#9776</a></li>
+		</ul>
+	</nav>
+	<div class="fullsize-menu" style="padding-top: 40px;">
+		<ul style="list-style: none;">
+			<li><a href="#" style="font-size: 27px; color: black; text-decoration: none; line-height: 1.8; letter-spacing: 0.03em;">ГЛАВНАЯ</a></li>
+			<li><a href="#" style="font-size: 27px; color: black; text-decoration: none; line-height: 1.8; letter-spacing: 0.03em;">НОВОСТИ</a></li>
+			<li><a href="#" style="font-size: 27px; color: black; text-decoration: none; line-height: 1.8; letter-spacing: 0.03em;">#ВЦЕНТРЕ</a></li>
+			<li><a href="#" style="font-size: 27px; color: black; text-decoration: none; line-height: 1.8; letter-spacing: 0.03em;">КОНТАКТЫ</a></li>
+			<li><a href="#" style="font-size: 27px; color: black; text-decoration: none; line-height: 1.8; letter-spacing: 0.03em;">О НАС</a></li>
+			<li><a href="#" style="font-size: 17px; color: #202021; text-decoration: none; line-height: 1.8; ">ВКОНТАКТЕ</a></li>
+			<li><a href="#" style="font-size: 17px; color: #202021; text-decoration: none; line-height: 1.8; ">FACEBOOK</a></li>
+			<li><a href="#" style="font-size: 17px; color: #202021; text-decoration: none; line-height: 1.8; ">TWITTER</a></li>
+			<li><a href="#" style="font-size: 17px; color: #202021; text-decoration: none; line-height: 1.8; ">YOUTUBE</a></li>
+		</ul>
+	</div>
+	<header>
+		<section class="first">
+			<div class="first-logo-padding">
+				<div class="first-text">
+					<p>
+						SENSE <br> OF <br> LIFE
+					</p>
+				</div>
+			</div>
+		</section>
+	</header>
+	<main>
+		<section class="topics row" id="topics">
+			<div class="wrapper">
+				<h2 class="bh2">ЛЕНТА</h2>
+				<ul class="topics-place">
+					<li class="topics-content">
+						<div class="topics-content-img">
+							<a href="#"><img src="./img/1.jpg"></a>
+						</div>
+						<div class="topics-content-text">
+							<a href="#">
+								<p class="topics-content-text--class">НОВОСТИ</p>
+								<h3>The Rolling Stones выпускают фильм о концертах 1999 года</h3>
+							</a>	
+						</div>
+					</li>
+					<li class="topics-content">
+						<div class="topics-content-img">
+							<a href="#"><img src="./img/2.jpg"></a>
+						</div>
+						<div class="topics-content-text">
+							<a href="#">
+								<p class="topics-content-text--class">НОВОСТИ</p>
+								<h3>Архивы The Beatles как снимали "Abbey Road"</h3>
+							</a>	
+						</div>
+					</li>
+					<li class="topics-content">
+						<div class="topics-content-img">
+							<a href="#"><img src="./img/3.jpg"></a>
+						</div>
+						<div class="topics-content-text">
+							<a href="#">
+								<p class="topics-content-text--class">НОВОСТИ</p>
+								<h3>Дочь Курта Кобейна готовится выпустить свой первый сингл</h3>
+							</a>	
+						</div>
+					</li>
+					<li class="topics-content">
+						<div class="topics-content-img">
+							<a href="#"><img src="./img/4.jpg"></a>
+						</div>
+						<div class="topics-content-text">
+							<a href="#">
+								<p class="topics-content-text--class">#ВЦЕНТРЕ</p>
+								<h3>Guns N’ Roses переиздают Appetite for Destruction с бонусами</h3>
+							</a>	
+						</div>
+					</li>
+					<li class="topics-content">
+						<div class="topics-content-img">
+							<a href="#"><img src="./img/5.jpg"></a>
+						</div>
+						<div class="topics-content-text">
+							<a href="#">
+								<p class="topics-content-text--class">#ВЦЕНТРЕ</p>
+								<h3>Whitesnake перенесли релиз альбома Flesh&Blood на следующий год</h3>
+							</a>	
+						</div>
+					</li>
+				</ul>
+			</div>
+		</section>
+		<section class="about row" id="about">
+			<div class="wrapper">
+				<h2 class="bh2">О ПРОЕКТЕ</h2>
+					<div class="about-text">
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					</div>
+			</div>
+		</section>
+		<section class="projects">
+			<div class="projects-main --plugstudio">
+				<div class="wrapper">
+					<div class="projects-logo"></div>
+					<div class="projects-text-area">
+						<h4>ROCKZ FESTIVAL</h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+						<a href="#" class="projects-button transition">Читать Дальше +</a>
+					</div>
+				</div>
+			</div>
+			<div class="projects-main --audition">
+				<div class="wrapper">
+					<div class="projects-logo logo--audition"><img src="/senceoflife/img/logo_sbga.png" style=" margin-top: 180px;"></div>
+					<div class="projects-text-area">
+						<h4>AUDITION</h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+						<a href="#" class="projects-button transition">Перейти на сайт +</a>
+					</div>
+				</div>
+			</div>
+			<div class="projects-main --2dproduction">
+				<div class="wrapper">
+					<div class="projects-logo"></div>
+					<div class="projects-text-area">
+						<h4>ZEMFIRA</h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+						<a href="#" class="projects-button transition">Читать Дальше +</a>
+					</div>
+				</div>
+			</div>
+			<div class="projects-main --2dlive">
+				<div class="wrapper">
+					<div class="projects-logo"></div>
+					<div class="projects-text-area">
+						<h4>LIVE STREAM</h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+						<a href="#" class="projects-button transition">Посмотреть видео +</a>
+					</div>
+				</div>
+			</div>
+			<div class="projects-main --girlsdontcry">
+				<div class="wrapper">
+					<div class="projects-logo"></div>
+					<div class="projects-text-area">
+						<h4>PORTLAND LORDS COMMING</h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+						<a href="#" class="projects-button transition">Читать Дальше +</a>
+					</div>
+				</div>
+			</div>
+			<div class="projects-main --yellow">
+				<div class="wrapper">
+					<div class="projects-logo"></div>
+					<div class="projects-text-area">
+						<h4>THE BLACK</h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+						<a href="#" class="projects-button transition">Читать Дальше +</a>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+	<footer>
+		<div class="foot-padding row">
+			<div class="foot-logo">
+			</div>
+			<div class="foot-ul1">
+				<ul>
+					<li><a href="#">ПРОЕКТЫ</a></li>
+					<li><a href="#">ROCKZ FESTIVAL</a></li>
+					<li><a href="#">AUDITION</a></li>
+					<li><a href="#">ZEMFIRA</a></li>
+					<li><a href="#">LIVE STREAM</a></li>
+					<li><a href="#">PORTLAND LORDS COMMING</a></li>
+					<li><a href="#">THE BLACK</a></li>
+				</ul>
+			</div>
+			<div class="foot-ul2">
+				<ul>
+					<li><a href="#">НОВОСТИ</a></li>
+					<li><a href="#">#ВЦЕНТРЕ</a></li>
+					<li><a href="#">О НАС</a></li>
+					<li><a href="#">КОНТАКТЫ</a></li>
+				</ul>
+			</div>
+			<div class="foot-social">
+				<ul>
+					<li><a href="#"><img src="/senceoflife/img/icn_fb.png"></a></li>
+					<li><a href="#"><img src="/senceoflife/img/icn_tw.png"></a></li>
+					<li><a href="#"><img src="/senceoflife/img/icn_ig.png"></a></li>
+					<li><a href="#"><img src="/senceoflife/img/icn_yt.png"></a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="foot-foot">
+			<div class="foot-foot-cop"><p>© 2018 All Rights Reserved</p></div>
+			<div class="foot-foot-nav">
+				<ul>
+				<li><a href="#">company</a></li>
+				<li><a href="#">recruit</a></li>
+				<li><a href="#">legal</a></li>
+				<li><a href="#">privacy</a></li>
+				</ul>
+			</div>
+		</div>
+	</footer>
+	 <script>
+        $(window).scroll(function(){
+      if ($(this).scrollTop() > 5) {
+          $('.nav-a').addClass('nav-a-black');
+      } else {
+          $('.nav-a').removeClass('nav-a-black');
+      }
+});
+        $(window).scroll(function(){
+      if ($(this).scrollTop() > 5) {
+          $('.topnav').addClass('topnav-white');
+      } else {
+          $('.topnav').removeClass('topnav-white');
+      }
+});
+    </script>
+   <script>
+  $(document).ready(function(){
+    $("a[href*=#]").on("click", function(e){
+        var anchor = $(this);
+        $('html, body').stop().animate({
+            scrollTop: $(anchor.attr('href')).offset().top
+        }, 777);
+        e.preventDefault();
+        return false;
+    });
+});
+</script>
+</body>
+</html>

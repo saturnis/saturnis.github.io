@@ -1,0 +1,186 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>MaxiNet</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+</head>
+<body>
+	<header>
+		<div class="topnav">
+			<div class="topnav--logo"></div>
+			<div class="topnav--nav">
+				<ul>
+					<li>Главная</li>
+					<li>Тарифы</li>
+					<li>О нас</li>
+					<li>О нас</li>
+					<li>О нас</li>
+				</ul>
+			</div>
+		</div>
+	</header>
+	<section class="one">
+		<div id="slider">
+			<a class="prev-control"><</a>
+			<a class="next-control">></a>
+			<ul>
+				<li style="background: url(1.jpg) center/cover;"></li>
+				<li style="background: url(2.jpg) center/cover;"></li>
+				<li style="background: url(3.jpg) center/cover;"></li>
+			</ul>
+		</div>
+	</section>
+	<section class="two">
+		<div class="wrapper">
+			<div class="reason">
+				<ul>
+					<li>1</li>
+					<li>2</li>
+					<li>3</li>
+				</ul>
+			</div>
+			<div class="more-options">
+				<h3>Experience the Magic of MaxiNet Mediaz</h3>
+				<ul>
+					<li style="background: grey;">1</li>
+					<li>2</li>
+					<li style="background: grey;">3</li>
+					<li>4</li>
+				</ul>
+				<div style="text-align: center; margin-top: 60px;"> <a href="#" class="more-options--button">Читать дальше</a> </div>
+				
+			</div>
+		</div>
+	</section>
+	<section class="three">
+		<div class="wrapper row" style="padding: 60px 0;">
+			<div class="get-start-left">
+				<p>get started to</p>
+				<h3>Discover a Wider World of Recreation</h3>
+				<p>Bandwidth has historically been very unequally distributed worldwide, with increasing concentration in the digital age. Historically only 10 countries have hosted 70-75 % of the global telecommunication capacity.</p>
+				<hr noshade>
+			</div>
+			<div class="get-start-right">
+			</div>
+		</div>
+	</section>
+	<section class="four">
+		<div class="wrapper" style="padding: 160px 0;">
+			<p>
+				Контакт 1
+			</p>
+			<h3>20Мб\с + ТСИ ТВ</h3>
+			<h4>1200р в месяц</h4>
+			<div style="margin-top: 60px;"><a href="#" class="more-options--button">Подключить</a></div>
+		</div>
+	</section>
+	<section class="five">
+		<div class="wrapper" style="padding: 60px 0;">
+			<div class="in-forms">
+				<h3>Отправьте заявку на подключение</h3>
+				<div class="row">
+					<div class="internet-form">
+						<p><input type="checkbox"> Домашний интернет</p>
+					</div>
+					<div class="internet-form">
+							<p><input type="checkbox"> Домашний телефон</p>
+					</div>
+				</div>
+				<hr noshade color="#eeeeee">
+				<h3 style="margin-bottom: 0; padding-bottom: 0;">После отправки заявки с Вами свяжется оператор</h3>
+				<div class="row">
+					<p style="padding-top: 0; margin: 10px 0; font-size: 18px; font-weight: 600; color: 212121;">Проверьте адрес подключения</p>
+					<div class="form-ulica">
+						<input type="text" name="ulica" placeholder="Улица">
+					</div>
+					<div class="form-dom">
+						<input type="text" name="dom" placeholder="Дом">
+					</div>
+					<div class="form-kv">
+						<input type="text" name="kv" placeholder="Кв.">
+					</div>
+				</div>
+				<div class="row">
+					<div class="form-name">
+						<p style="padding-top: 0; margin: 10px 0; font-size: 18px; font-weight: 600; color: 212121;">Как к Вам обращаться</p>
+						<input type="text" name="name" placeholder="Фамилия Имя Отчество">
+					</div>
+					<div class="form-phone">
+						<p style="padding-top: 0; margin: 10px 0; font-size: 18px; font-weight: 600; color: 212121;">Контактный телефон</p>
+						<input type="text" name="phone" placeholder="Телефон">
+					</div>
+					<div class="form-button">
+						<a href="#">Заказать</a>
+					</div>
+				</div>
+				<div class="rules" style="float: left;">
+					<input type="checkbox" name="rules"> 
+				</div>
+				<div style="float: left;">
+					<p style="font-size: 14px;">Даю согласие на обработку персональных данных в соответствии с <a href="#">Условиями</a>.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="six">
+		<div class="free--left">
+			<h3>Бесплатный роутер</h3>
+			<p>при подключении</p>
+		</div>
+		<div class="free--right"></div>
+	</section>
+	<footer>
+		<ul>
+			<li>1</li>
+			<li>2</li>
+			<li>3</li>
+			<li>4</li>
+		</ul>
+		<hr>
+		<p class="copyright">© 2018. All rights reserved.</p>
+	</footer>
+	<script type="text/javascript">
+	jQuery(document).ready(function ($) {
+
+		var slideCount = $('#slider ul li').length;
+		var slideWidth = $('#slider ul li').width();
+		var slideHeight = $('#slider ul li').height();
+		var sliderUlWidth = slideCount * slideWidth;
+		
+		$('#slider').css({ width: slideWidth, height: slideHeight });
+		
+		$('#slider ul').css({ width: sliderUlWidth, marginLeft: - slideWidth });
+		
+	    $('#slider ul li:last-child').prependTo('#slider ul');
+
+	    function moveLeft() {
+	        $('#slider ul').animate({
+	            left: + slideWidth
+	        }, 800, function () {
+	            $('#slider ul li:last-child').prependTo('#slider ul');
+	            $('#slider ul').css('left', '');
+	        });
+	    };
+
+	    function moveRight() {
+	        $('#slider ul').animate({
+	            left: - slideWidth
+	        }, 800, function () {
+	            $('#slider ul li:first-child').appendTo('#slider ul');
+	            $('#slider ul').css('left', '');
+	        });
+	    };
+
+	    $('a.prev-control').click(function () {
+	        moveLeft();
+	    });
+
+	    $('a.next-control').click(function () {
+	        moveRight();
+	    });
+
+});   </script>
+</body>
+</html>
